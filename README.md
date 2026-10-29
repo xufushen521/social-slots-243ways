@@ -86,4 +86,4 @@ python -m unittest discover -s tests -v
 
 计算结果属于可复算的原型参数，不是商业机台认证结果。代码和各自的 `config.json` 是当前版本的事实来源。
 
-作者：许富深
+作者：fox

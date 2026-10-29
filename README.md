@@ -15,6 +15,8 @@
 
 ## 下载后启动
 
+[下载项目 ZIP](https://github.com/xufushen521/social-slots-243ways/archive/refs/heads/main.zip)
+
 ### Windows
 
 1. 点击页面右上角 `Code`，选择 `Download ZIP`。

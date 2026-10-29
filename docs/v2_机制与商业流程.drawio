@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net" modified="2026-10-28T00:00:00.000Z" agent="Codex" version="24.7.17">
+  <diagram id="v2-flow" name="v2 机制与商业流程">
+    <mxGraphModel dx="1800" dy="1100" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="优先级：U1   v2 243 Ways：机制与商业流程" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=26;fontStyle=1;fontColor=#1F2933;" vertex="1" parent="1">
+          <mxGeometry x="45" y="20" width="900" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="Base Spin → SC2 Free Spin 优先 → SC1 Respin → 回主游戏" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontColor=#59636E;" vertex="1" parent="1">
+          <mxGeometry x="47" y="65" width="900" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="base" value="Base Spin&#xa;扣 1 倍总下注" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDEBF7;strokeColor=#6C8EBF;strokeWidth=2;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="45" y="145" width="180" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="ways" value="普通 ways 结算&#xa;7 个普通符号" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDEBF7;strokeColor=#6C8EBF;strokeWidth=2;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="145" width="180" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="d-sc2" value="SC2 ≥ 3 ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="495" y="120" width="175" height="132" as="geometry"/>
+        </mxCell>
+        <mxCell id="d-sc1" value="SC1 ≥ 3 ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="495" y="340" width="175" height="132" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="fs" value="Free Spin&#xa;6 次 ×2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;strokeWidth=2;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="120" width="210" height="88" as="geometry"/>
+        </mxCell>
+        <mxCell id="fs-rule" value="不 retrigger&#xa;FS 内 SC1/SC2 不再触发" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2F0D9;strokeColor=#82B366;strokeWidth=2;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="990" y="115" width="275" height="96" as="geometry"/>
+        </mxCell>
+        <mxCell id="fs-cap" value="触发总赢封顶 5000x" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;strokeWidth=2;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="120" width="130" height="86" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="respin" value="Respin&#xa;初始 3 次" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;strokeWidth=2;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="340" width="210" height="88" as="geometry"/>
+        </mxCell>
+        <mxCell id="new-sc1" value="本轮出现新的 SC1 ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="325" width="190" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="add-one" value="新 SC1 粘住&#xa;次数 +1&#xa;多个新 SC1 仍只 +1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2F0D9;strokeColor=#82B366;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="325" width="185" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec" value="本次 Respin 结束&#xa;剩余次数 −1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;strokeWidth=2;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="495" width="190" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="has-left" value="剩余次数 > 0 ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="480" width="185" height="108" as="geometry"/>
+        </mxCell>
+        <mxCell id="respin-cap" value="累计奖励次数最多 5 次&#xa;已达上限：只粘住，不再加次" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="640" width="185" height="82" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="no-trigger" value="无 Feature&#xa;本转结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;strokeWidth=2;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="735" y="520" width="210" height="76" as="geometry"/>
+        </mxCell>
+        <mxCell id="return" value="回主游戏&#xa;可继续下一次 Base Spin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2F3E46;fontColor=#FFFFFF;strokeColor=#2F3E46;strokeWidth=2;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="800" width="190" height="86" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="buy" value="Feature Buy&#xa;支付 10.5x 总下注" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="760" width="210" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="buy-rule" value="直接进入同一套 FS&#xa;6 次 ×2；单独 RTP 90.54%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3EAF7;strokeColor=#9673A6;strokeWidth=2;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="560" y="760" width="245" height="84" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="priority-note" value="同一 Base Spin 同时触发：&#xa;Free Spin 优先；Respin 不补发、不延后" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE9D9;strokeColor=#D79B00;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="495" y="260" width="175" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="sc2-inert" value="Respin 内出现 SC2&#xa;→ 不触发 Free Spin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="735" y="635" width="210" height="68" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="commercial" value="&lt;b&gt;商业层解读&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Base 是稳定金币 sink，普通 ways 每转提供反馈。&lt;br&gt;&lt;br&gt;2. SC1 Respin 提供短期待机与小赢回补；最多 5 次控制尾部时长。&lt;br&gt;&lt;br&gt;3. SC2 FS 是主要爆点；6 次 ×2 且不 retrigger，成本可预测。&lt;br&gt;&lt;br&gt;4. 同时触发 FS 优先，避免叠加两种 Feature 和控制 RTP 风险。&lt;br&gt;&lt;br&gt;5. Feature Buy 10.5x 是主动金币 sink；RTP 90.54% 单独核算。&lt;br&gt;&lt;br&gt;6. 5000x 封顶用于控制超长尾。&lt;br&gt;&lt;br&gt;&lt;b&gt;核心口径&lt;/b&gt;&lt;br&gt;自然设计约 93.00%｜1M 92.94%&lt;br&gt;Feature Buy 90.54%｜无真钱提现" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#9FB6C6;strokeWidth=2;align=left;verticalAlign=top;spacing=12;fontSize=13;fontColor=#1F2933;" vertex="1" parent="1">
+          <mxGeometry x="1535" y="105" width="330" height="900" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="special" value="&lt;b&gt;边界规则&lt;/b&gt;&lt;br&gt;• SC1 或 SC2 达到 3 / 4 / 5 个时，没有额外档位差异。&lt;br&gt;• Respin 内多个新 SC1 只续 1 次；达到 5 次上限后仍可粘住但不加次数。&lt;br&gt;• Respin 内 SC2 不触发 FS；FS 内 SC1/SC2 都不触发玩法。&lt;br&gt;• 同盘同时触发时只进 FS，Respin 不得延后补发。&lt;br&gt;• Base ways 先结算；所有 Feature 结束后回到下一次 Base Spin。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#B7C3CC;strokeWidth=2;align=left;verticalAlign=top;spacing=12;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="45" y="910" width="1380" height="190" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;" edge="1" parent="1" source="base" target="ways"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;" edge="1" parent="1" source="ways" target="d-sc2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82B366;endArrow=block;endFill=1;fontSize=12;fontColor=#38761D;" edge="1" parent="1" source="d-sc2" target="fs"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;fontSize=12;" edge="1" parent="1" source="d-sc2" target="d-sc1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82B366;endArrow=block;endFill=1;fontSize=12;fontColor=#38761D;" edge="1" parent="1" source="d-sc1" target="respin"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;fontSize=12;" edge="1" parent="1" source="d-sc1" target="no-trigger"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;" edge="1" parent="1" source="fs" target="fs-rule"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;" edge="1" parent="1" source="fs-rule" target="fs-cap"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;" edge="1" parent="1" source="respin" target="new-sc1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82B366;endArrow=block;endFill=1;fontSize=12;fontColor=#38761D;" edge="1" parent="1" source="new-sc1" target="add-one"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e11" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;fontSize=12;" edge="1" parent="1" source="new-sc1" target="dec"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;" edge="1" parent="1" source="dec" target="has-left"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e13" value="是：继续 Respin" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82B366;endArrow=block;endFill=1;fontSize=12;fontColor=#38761D;" edge="1" parent="1" source="has-left" target="respin"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e14" value="否：结束" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;fontSize=12;" edge="1" parent="1" source="has-left" target="respin-cap"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673A6;endArrow=block;endFill=1;" edge="1" parent="1" source="buy" target="buy-rule"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e16" value="进入同一套 FS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673A6;dashed=1;endArrow=block;endFill=1;fontSize=12;fontColor=#6A4C78;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="buy-rule" target="fs"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="682" y="710"/><mxPoint x="840" y="710"/><mxPoint x="840" y="208"/></Array></mxGeometry></mxCell>
+
+        <mxCell id="e17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fs-cap" target="return"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1365" y="280"/><mxPoint x="1355" y="280"/></Array></mxGeometry></mxCell>
+        <mxCell id="e18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="no-trigger" target="return"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="840" y="760"/><mxPoint x="1355" y="760"/></Array></mxGeometry></mxCell>
+        <mxCell id="e19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#52616B;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="respin-cap" target="return"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e20" value="最多 5 次" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82B366;dashed=1;endArrow=block;endFill=1;fontSize=11;fontColor=#38761D;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="add-one" target="respin"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1332" y="285"/><mxPoint x="840" y="285"/></Array></mxGeometry></mxCell>
+        <mxCell id="e21" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#999999;dashed=1;endArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="new-sc1" target="sc2-inert"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

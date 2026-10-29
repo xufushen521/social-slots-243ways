@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "name": "243 Ways Social v1",
+    "version": 1,
+    "note": "Simplified 7-symbol base-only model. No scatter and no feature."
+  },
+  "max_win": 1000,
+  "default_preset": "base_v1",
+  "presets": {
+    "base_v1": {
+      "max_win": 1000,
+      "grid": {
+        "reels": 5,
+        "rows": 3,
+        "ways": 243,
+        "pay_direction": "left_to_right",
+        "min_match": 3
+      },
+      "symbol_order": ["K", "Q", "J", "10", "9", "8", "7"],
+      "reels": {
+        "strips": [
+          ["K", "Q", "J", "10", "9", "8", "7", "K", "Q", "J", "10", "9", "8", "7", "K", "Q", "10", "9", "8", "7"],
+          ["K", "Q", "J", "10", "9", "8", "7", "K", "Q", "J", "10", "9", "8", "7", "K", "Q", "10", "9", "8", "7"],
+          ["K", "Q", "J", "10", "9", "8", "7", "K", "Q", "J", "10", "9", "8", "7", "K", "Q", "10", "9", "8", "7"],
+          ["K", "Q", "J", "10", "9", "8", "7", "K", "Q", "J", "10", "9", "8", "7", "K", "Q", "10", "9", "8", "7"],
+          ["K", "Q", "J", "10", "9", "8", "7", "K", "Q", "J", "10", "9", "8", "7", "K", "Q", "10", "9", "8", "7"]
+        ]
+      },
+      "symbols": {
+        "K": {"type": "regular", "pays": {"3": 0.5, "4": 1.0, "5": 10.0}},
+        "Q": {"type": "regular", "pays": {"3": 0.4, "4": 0.8, "5": 10.0}},
+        "J": {"type": "regular", "pays": {"3": 0.4, "4": 0.8, "5": 5.0}},
+        "10": {"type": "regular", "pays": {"3": 0.3, "4": 0.5, "5": 5.0}},
+        "9": {"type": "regular", "pays": {"3": 0.3, "4": 0.5, "5": 5.0}},
+        "8": {"type": "regular", "pays": {"3": 0.3, "4": 0.5, "5": 5.0}},
+        "7": {"type": "regular", "pays": {"3": 0.3, "4": 0.5, "5": 5.0}}
+      },
+      "bet": {
+        "levels": [0.2, 0.5, 1.0, 2.0, 5.0, 10.0],
+        "default": 0.5
+      },
+      "math_summary": {
+        "exact_ways_rtp": 0.953311,
+        "feature_rtp": 0.0,
+        "total_rtp": 0.954059,
+        "hit_rate": 0.415546,
+        "sd": 2.5101,
+        "max_win_observed": 25.0,
+        "feature_buy_rtp": 0.0
+      }
+    }
+  }
+}

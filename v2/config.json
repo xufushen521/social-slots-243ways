@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "name": "243 Ways Social v2",
+    "version": 2,
+    "note": "Simplified 7-symbol model. SC1 triggers Respin; SC2 triggers Free Spin."
+  },
+  "max_win": 5000,
+  "default_preset": "social_v2",
+  "presets": {
+    "social_v2": {
+      "max_win": 5000,
+      "grid": {
+        "reels": 5,
+        "rows": 3,
+        "ways": 243,
+        "pay_direction": "left_to_right",
+        "min_match": 3
+      },
+      "symbol_order": ["K", "Q", "J", "10", "9", "8", "7", "SC1", "SC2"],
+      "reels": {
+        "strips": [
+          ["K", "Q", "J", "10", "9", "8", "7", "K", "Q", "J", "10", "9", "8", "7", "K", "Q", "10", "9", "SC1", "SC2"],
+          ["K", "Q", "J", "10", "9", "8", "7", "K", "Q", "J", "10", "9", "8", "7", "K", "Q", "10", "9", "SC1", "SC2"],
+          ["K", "Q", "J", "10", "9", "8", "7", "K", "Q", "J", "10", "9", "8", "7", "K", "Q", "10", "9", "SC1", "SC2"],
+          ["K", "Q", "J", "10", "9", "8", "7", "K", "Q", "J", "10", "9", "8", "7", "K", "Q", "10", "9", "SC1", "SC2"],
+          ["K", "Q", "J", "10", "9", "8", "7", "K", "Q", "J", "10", "9", "8", "7", "K", "Q", "10", "9", "SC1", "8"]
+        ]
+      },
+      "symbols": {
+        "K": {"type": "regular", "pays": {"3": 0.6, "4": 1.0, "5": 10.0}},
+        "Q": {"type": "regular", "pays": {"3": 0.4, "4": 0.8, "5": 10.0}},
+        "J": {"type": "regular", "pays": {"3": 0.4, "4": 0.8, "5": 10.0}},
+        "10": {"type": "regular", "pays": {"3": 0.3, "4": 0.8, "5": 5.0}},
+        "9": {"type": "regular", "pays": {"3": 0.3, "4": 0.8, "5": 5.0}},
+        "8": {"type": "regular", "pays": {"3": 0.3, "4": 0.8, "5": 5.0}},
+        "7": {"type": "regular", "pays": {"3": 0.3, "4": 0.8, "5": 5.0}},
+        "SC1": {"type": "scatter"},
+        "SC2": {"type": "scatter"}
+      },
+      "scatter": {
+        "respins": {
+          "symbol": "SC1",
+          "min_count": 3,
+          "awards": {"3": 3, "4": 3, "5": 3},
+          "retrigger_add": 1,
+          "max_respins": 5
+        },
+        "free_spins": {
+          "symbol": "SC2",
+          "min_count": 3,
+          "spins": 6,
+          "multiplier": 2.0,
+          "retrigger": false
+        }
+      },
+      "feature_buy": {
+        "enabled": true,
+        "cost_multiplier": 10.5,
+        "target_rtp": 0.93
+      },
+      "bet": {
+        "levels": [0.2, 0.5, 1.0, 2.0, 5.0, 10.0],
+        "default": 0.5
+      },
+      "math_summary": {
+        "exact_ways_rtp": 0.796667,
+        "feature_rtp": 0.133329,
+        "total_rtp": 0.929436,
+        "hit_rate": 0.360720,
+        "sd": 2.8799,
+        "max_win_observed": 90.0,
+        "feature_buy_rtp": 0.905374
+      }
+    }
+  }
+}
